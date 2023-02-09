@@ -5,7 +5,7 @@ pipeline {
   }
   environment {
     CI = true
-    ARTIFACTORY_ACCESS_TOKEN = credentials('jfrog-PAT')
+    ARTIFACTORY_ACCESS_TOKEN = credentials('jfrog-access-token')
   }
   stages {
     stage('Build') {
